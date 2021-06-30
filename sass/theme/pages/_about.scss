@@ -1,0 +1,51 @@
+#about-intro {
+    margin-top: 70px;
+    margin-bottom: 75px;
+    @include breakpoint (desktop) {
+        margin-top: 60px;
+        margin-bottom: 65px;
+    }
+    @include media-breakpoint-only(lg) {
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+    @include media-breakpoint-down(md) {
+       margin-top: 50px;
+       margin-bottom: 30px;
+    }
+    &-in {
+        max-width: 1042px;
+    }
+    h2 {
+        @include heading-font;
+        display: inline-block;
+        margin-bottom: 102px;
+        padding-right: 200px;
+        @include breakpoint (desktop) {
+            margin-bottom: 80px;
+            padding-right: 150px;
+        }
+        @include media-breakpoint-only(lg) {
+            margin-bottom: 50px;
+            padding-right: 100px;
+        }
+        @include media-breakpoint-only(md) {
+           margin-bottom: 40px;
+           padding-right: 0;
+        }
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 30px;
+            padding-right: 0;
+        }
+        &:after {
+            content: '.';
+            color: $red;
+        }
+    }
+    p {
+        @include regular-text2;
+        @include media-breakpoint-down(sm) {
+            font-size: 1em;
+        }
+    }
+}

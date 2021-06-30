@@ -1,0 +1,49 @@
+#regular-page {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    h1 {
+        @include page-title;
+        margin-bottom: 40px;
+        color: $red;
+    }
+    h2 {
+        @include heading-font2;
+        color: #484848;
+        margin-top: 55px;
+        margin-bottom: 30px;
+    }
+    h3 {
+        @include heading-font2;
+        font-size: 1.750em;
+        color: #484848;
+        margin-top: 25px;
+        margin-bottom: 15px;
+        @include breakpoint (desktop) {
+            font-size: 1.6em;
+        }
+        @include media-breakpoint-only(lg) {
+            font-size: 1.5em;
+        }
+        @include media-breakpoint-only(md) {
+           font-size: 1.4em;
+        }
+        @include media-breakpoint-down(sm) {
+            font-size: 1.3em;
+        }
+    }
+    h4 {
+        font-family: $azo-bold;
+        font-size: 1.125em;
+        line-height: 1.2;
+        color: $heading-color;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+    p {
+        margin-bottom: 20px;
+    }
+    ul {
+        @include list-style;
+    }
+}
+
