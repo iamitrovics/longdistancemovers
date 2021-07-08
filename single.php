@@ -106,11 +106,11 @@ $container = get_theme_mod( 'understrap_container_type' );
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <a href="#">What are the Best San Francisco High Schools?</a>
+                        <?php previous_post_link( '%link', '%title', TRUE ); ?> 
                     </div>
                     <!-- /.col -->
                     <div class="col">
-                        <a href="#">What are the Best San Francisco High Schools?</a>
+                        <?php next_post_link( '%link', '%title', TRUE ); ?>
                     </div>
                     <!-- /.col -->
                 </div>
