@@ -43,7 +43,12 @@ $container = get_theme_mod( 'understrap_container_type' );
                         Posted in 
                         <?php echo get_the_category_list(', '); ?>
                         
-                            on <?php echo get_the_date( 'F j, Y' ); ?></span>
+                            on <?php echo get_the_date( 'F j, Y' ); ?>
+                            <br>
+                            By <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php the_author(); ?></a>
+                        </span>
+
+                        
 
                         <!-- /.blog-info -->
                         <h1><?php the_title(); ?></h1>
