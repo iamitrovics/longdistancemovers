@@ -564,3 +564,41 @@
         }
     }
 }
+
+// CTA
+.quote-cta--single {
+    padding:30px;
+    background:#E6EDF9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include media-breakpoint-down(md) {
+        display: block;
+        text-align: center;
+    }
+    span.title {
+        display: block;
+        margin-right: 30px;
+        border-radius: 12px;
+        font-size: 32px;
+        color:#FF3A43;
+        font-family: $azo-med;       
+        width: 60%;
+        line-height: 1.2;
+        @include media-breakpoint-down(md) {
+            margin-right: 0px;
+            margin-bottom: 15px;
+            font-size: 26px;
+            width: 100%;
+        }
+    }
+    a.btn-cta {
+        @include red-btn;
+    }
+}
+
+body.single {
+    .contact-content {
+        padding-top: 0px!important;
+    }
+}
