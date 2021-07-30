@@ -132,5 +132,8 @@
 		    },
 		  ]
 		});
+
+		$('.blog-content-single a').attr("target","_blank");
+
 	});
 })(jQuery);
