@@ -265,6 +265,7 @@
     li {
         @include regular-text;
         margin-bottom: 5px;
+        font-size: 15px;
         strong {
             font-family: $azo-bold;
         }
