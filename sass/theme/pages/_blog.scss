@@ -740,3 +740,50 @@ body.single {
         padding-top: 0px!important;
     }
 }
+
+
+#blog-single-in .post-wrapper {
+    background-color: #E6EDF9;
+    padding:15px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    .item {
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+        .nav-col {
+            &:hover {
+                .icon {
+                    background:$red;
+                    img {
+                        filter: brightness(0) invert(1);
+                    }
+                }
+            }
+            .icon {
+                justify-content: center;
+                width: 85px;
+                height: 85px;
+                background: #FFFFFF;
+                border-radius: 9px;
+                margin-bottom: 23px;
+                margin-left: auto;
+                margin-right: auto;       
+                position: relative;    
+                @include animate-fade;     
+                img {
+                    @include centre(both);
+                    width: 40px;
+                    margin:0px;
+                    border-radius: inherit;
+                    width:40px!important;
+                    @include animate-fade;
+                }
+            }
+            span {
+                @include subheading-font;
+                text-align: center;
+            }
+        }
+    }
+}

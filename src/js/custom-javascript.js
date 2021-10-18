@@ -94,6 +94,43 @@
        });
 
 
+      $('#nav-slider').slick({
+        infinite: false,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: true,
+        autoplay: true,
+        infinite: true,
+        autoplaySpeed: 4000,
+        responsive: [{
+                breakpoint: 1199,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                }
+            },
+
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            },
+
+        ]
+    });         
+
+
         $(function() {
             $('.quote-cta--single a.btn-cta').click(function() {
               if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {

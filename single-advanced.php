@@ -285,7 +285,7 @@
                                 <?php if( have_rows('features_list') ): ?>
                                     <?php while( have_rows('features_list') ): the_row(); ?>
 
-                                        <div class="col-md-4">
+                                        <div class="col-md-6">
                                             <div class="feat-card">
                                                 <div class="feat-ico">
                                                     <?php the_sub_field('icon_code'); ?>
