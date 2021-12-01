@@ -1,0 +1,293 @@
+@font-face {
+    font-family: 'Azo Sans Black';
+    src: url('../fonts/AzoSans-Black.woff2') format('woff2'),
+        url('../fonts/AzoSans-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Azo Sans Light';
+    src: url('../fonts/AzoSans-Light.woff2') format('woff2'),
+        url('../fonts/AzoSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Azo Sans BoldItalic';
+    src: url('../fonts/AzoSans-BoldItalic.woff2') format('woff2'),
+        url('../fonts/AzoSans-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Azo Sans Bold';
+    src: url('../fonts/AzoSans-Bold.woff2') format('woff2'),
+        url('../fonts/AzoSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Azo Sans Medium';
+    src: url('../fonts/AzoSans-Medium.woff2') format('woff2'),
+        url('../fonts/AzoSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Azo Sans Regular';
+    src: url('../fonts/AzoSans-Regular.woff2') format('woff2'),
+        url('../fonts/AzoSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+$azo-reg: 'Azo Sans Regular';
+$azo-bold: 'Azo Sans Bold';
+$azo-boldi: 'Azo Sans BoldItalic';
+$azo-black: 'Azo Sans Black';
+$azo-med: 'Azo Sans Medium';
+$azo-light: 'Azo Sans Light';
+
+$font-main: 'Azo Sans Regular';
+$font-heading: 'Azo Sans Bold';
+
+
+*, :after, :before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.fa, .fab, .fas, .fal, .far {
+    font-family: 'icomoon';
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?8ts0ia');
+  src:  url('../fonts/icomoon.eot?8ts0ia#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?8ts0ia') format('truetype'),
+    url('../fonts/icomoon.woff?8ts0ia') format('woff'),
+    url('../fonts/icomoon.svg?8ts0ia#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-phone:before, .fa-phone-alt:before {
+  content: "\e91a";
+}
+
+.icon-circle:before, .fa-circle:before {
+  content: "\e919";
+}
+
+.icon-star:before, .fa-star:before {
+  content: "\e918";
+}
+.icon-boxes-alt:before, .fa-boxes-alt:before {
+  content: "\e904";
+}
+.icon-box-open:before, .fa-box-open:before {
+  content: "\e905";
+}
+.icon-truck-couch:before, .fa-truck-couch:before {
+  content: "\e906";
+}
+.icon-box-fragile:before, .fa-box-fragile:before {
+  content: "\e907";
+}
+.icon-box-full:before, .fa-box-full:before {
+  content: "\e908";
+}
+.icon-car:before, .fa-car:before {
+  content: "\e909";
+}
+.icon-paper-plane:before, .fa-paper-plane:before {
+  content: "\e90a";
+}
+.icon-linkedin:before, .fa-linkedin:before {
+  content: "\e90b";
+}
+.icon-instagram:before, .fa-instagram:before {
+  content: "\e90c";
+}
+.icon-twitter:before, .fa-twitter:before {
+  content: "\e90d";
+}
+.icon-facebook:before, .fa-facebook:before {
+  content: "\e90e";
+}
+.icon-yelp:before, .fa-yelp:before {
+  content: "\e90f";
+}
+.icon-arrow-left:before, .fa-arrow-left:before {
+  content: "\e910";
+}
+.icon-arrow-right:before, .fa-arrow-right:before {
+  content: "\e911";
+}
+.icon-chevron-down:before, .fa-chevron-down:before {
+  content: "\e912";
+}
+.icon-square:before, .fa-square:before {
+  content: "\e913";
+}
+.icon-angle-left-o:before, .fa-angle-left-o:before {
+  content: "\e914";
+}
+.icon-angle-right-o:before, .fa-angle-right-o:before {
+  content: "\e915";
+}
+.icon-chevron-left:before, .fa-chevron-left:before {
+  content: "\e916";
+}
+.icon-chevron-right:before, .fa-chevron-right:before {
+  content: "\e917";
+}
+.icon-awesome-clipboard-list:before {
+  content: "\e900";
+}
+.icon-awesome-truck-moving:before {
+  content: "\e901";
+}
+.icon-ion-md-resize:before,.icon-ion-md-distance:before {
+  content: "\e902";
+}
+.icon-ion-md-distance {
+    -webkit-transform: rotate(45deg); 
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.icon-logo-sm:before, .icon-logo-sm-r:before {
+    content: "\e903";
+}
+
+.icon-logo-sm-r {
+    -webkit-transform: rotate(180deg); 
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+  
+
+
+body { 
+	font: {
+		size:$base-size;
+		family: $font-main;
+	}
+	-webkit-text-size-adjust: 100%;  //fix for iOS 
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+p {
+    font-size: 0.975em;
+    line-height: 1.571;
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: $text-color;
+    a {
+        color:$heading-color;
+        &:hover {
+            text-decoration: underline;
+            color:$text-color;
+        }
+    }
+}
+
+ul {
+    list-style: none;
+    margin:0px;
+    padding:0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.h1, h1 {
+    font-size: 2.5rem;
+}
+
+.h2, h2 {
+    font-size: 2rem;
+}
+
+.h3, h3 {
+    font-size: 1.75rem;
+}
+
+.h4, h4 {
+    font-size: 1.5rem;
+}
+
+// reset
+a {
+    @include animate-fade;
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+a, button, input, textarea {
+    &:focus {
+        outline: none!important;
+    }
+}
+
+button, input[type="submit"] {
+    @include animate-fade;
+    cursor: pointer;
+}
+
+address {
+    margin:0px;
+    padding:0px;
+}
+iframe {
+    border:0;
+}
+
+i {
+    font-style: normal;
+}
+
+#secondary img, article img, figure, img, img.wp-post-image {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
