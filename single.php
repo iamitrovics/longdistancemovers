@@ -212,7 +212,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
                         <div class="contact-content">
-                            <h1>Get a Quote</h1>
+                            <h2>Get a Quote</h2>
                             
                             <div class="quote-form-in">
 
