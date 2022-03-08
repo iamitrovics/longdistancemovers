@@ -6769,6 +6769,22 @@ if (typeof jQuery === 'undefined') {
           }
         }
       });
+    }); //content accordion
+
+    $(".content__accordion .faq-wrap:first-of-type > h3").addClass('active');
+    $(".content__accordion .faq-wrap:first-of-type > .faq-content").css('display', 'block');
+    $(".content__accordion .faq-wrap > h3").on("click", function (e) {
+      if ($(this).hasClass("active")) {
+        $(this).removeClass("active");
+        $(this).siblings(".content__accordion .faq-wrap > .faq-content").slideUp(200);
+      } else {
+        $(".content__accordion .faq-wrap > h3").removeClass("active");
+        $(this).addClass("active");
+        $(".content__accordion .faq-wrap > .faq-content").slideUp(200);
+        $(this).siblings(".content__accordion .faq-wrap > .faq-content").slideDown(200);
+      }
+
+      e.preventDefault();
     });
     $(".date-picker-input").attr("autocomplete", "off");
     $('#reviews-slider').slick({

@@ -649,13 +649,13 @@
                 color: #adadad;	
                 @include animate-fade;	
             }	
-            &.ui-state-active {	
+            &.active {
                 background-color: $red;	
                 color: $white;	
                 &:after {	
                     content: "\f107";	
                     color: $white;	
-                }	
+                }                
             }	
         }	
         .ui-accordion-content {	
@@ -857,4 +857,8 @@ body.single {
             }
         }
     }
+}
+
+.faq-wrap> div {
+    display: none;
 }

@@ -140,6 +140,42 @@ $container = get_theme_mod( 'understrap_container_type' );
 
                                     <?php elseif( get_row_layout() == 'accordion' ): ?>
 
+     
+                                        
+                                        <div class="content__accordion">
+
+                                            <h2><?php the_sub_field('accordion_title'); ?></h2>
+
+                                                <?php
+
+                                                    // check if the repeater field has rows of data
+                                                    if(have_rows('accordion_list')):
+
+                                                        // loop through the rows of data
+                                                        while(have_rows('accordion_list')) : the_row();
+
+                                                            $title = get_sub_field('heading');
+                                                            $content  = get_sub_field('content');
+
+                                                            ?>  
+
+                                                            <div class="faq-wrap">
+                                                                <h3><?php echo $title; ?></h3>
+                                                                <div class="faq-content">
+                                                                    <?php echo $content; ?>
+                                                                </div>
+                                                            </div>
+
+                                                        <?php endwhile;
+
+                                                    else :
+                                                        echo 'No data';
+                                                    endif;
+                                                    ?>
+
+                                        </div>
+
+
                                     <?php elseif( get_row_layout() == 'quote_cta' ): ?>
 
                                         <div class="quote-cta--single">
