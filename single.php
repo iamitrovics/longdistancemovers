@@ -143,7 +143,6 @@ $container = get_theme_mod( 'understrap_container_type' );
      
                                         
                                         <div class="content__accordion">
-
                                             <h2><?php the_sub_field('accordion_title'); ?></h2>
 
                                                 <?php
