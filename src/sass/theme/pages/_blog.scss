@@ -140,9 +140,6 @@
                         opacity: 0;
                         z-index: 2;
                         @include animate-fade;
-                        i {
-
-                        }
                     }
                 }
             }
@@ -526,7 +523,7 @@
         }
     }
     &-in {
-        max-width: 826px;
+        max-width: 926px;
         margin-left: auto;
         margin-right: auto;
         padding-bottom: 45px;
@@ -676,6 +673,126 @@
                 }	
             }	
         }	
+    }
+
+    // services list
+    .services-list {
+        background: #EBEBE4;
+        padding:35px;
+        header {
+            h3 {
+                text-align: center;
+                @include heading-font;
+                margin-top: 0px;
+                padding-top: 0px;
+                margin-bottom: 50px;
+                @include bp(sm-down) {
+                    margin-bottom: 25px;
+                }
+                &:after {
+                    content: '.';
+                    color: $red;
+                    display: inline-block;
+                }                
+            }
+        }
+        .service-box {
+            position: relative;
+            @include animate-fade;
+            padding: 33px 24px 24px 24px;
+            text-align: center;
+            box-shadow: 0px 0px 44px -10px rgba(0, 0, 0, 0.15);
+            background-color: #fff;
+            margin-bottom: 30px;
+            &:hover {
+                .serv-more {
+                    background-color: #fff;
+                    color: $red;
+                    box-shadow: 0px 6px 20px rgba($red, .3);
+                    &:after {
+                        color: $red;
+                    }
+                }
+                h2, h3 {
+                    color: $red;
+                }
+            }
+            .services-ico {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 55px;
+                height: 55px;
+                background: #FFFFFF;
+                border-radius: 9px;
+                margin-bottom: 23px;
+                margin-left: auto;
+                margin-right: auto;
+                -webkit-box-shadow: inset 0 0.1rem 0.1rem rgba(0, 0, 0, 0.1);
+                box-shadow: inset 0 0.1rem 0.1rem rgba(0, 0, 0, 0.1);
+                background: #EBEBE4;
+                i {
+                    color: $red;
+                    font-size: 22px;
+                }
+            }
+            h2, h3 {
+                @include subheading-font;
+                margin-bottom: 15px;
+                @include animate-fade;
+            }
+            p {
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+            a.url-wrap {
+                position: absolute;
+                left: 0;
+                top: 0;
+                display: block;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+                font-size: 0;
+            }
+            .serv-more {
+                @include white-btn;
+                display: inline-block;
+                margin-top: 20px;
+                @include bp(md) {
+                    padding: 16px 58px 12px 20px;
+                    font-size: 0.85em;
+                }
+                &:after {
+                    @include bp(md) {
+                        font-size: 14px;
+                    }
+                }
+            }            
+            .service-box {
+                position: relative;
+                @include animate-fade;
+                padding: 33px 24px 24px 24px;
+                text-align: center;
+                box-shadow: 0px 0px 44px -10px rgba(0, 0, 0, 0.15);
+                background-color: #fff;
+                margin-bottom: 30px;
+                &:hover {
+                    .serv-more {
+                        background-color: #fff;
+                        color: $red;
+                        box-shadow: 0px 6px 20px rgba($red, .3);
+                        &:after {
+                            color: $red;
+                        }
+                    }
+                    h2, h3 {
+                        color: $red;
+                    }
+                }
+            }            
+        }
     }
 
     #blog-bottom-cta {
