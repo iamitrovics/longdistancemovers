@@ -6667,6 +6667,7 @@ if (typeof jQuery === 'undefined') {
     $('#service-boxes .service-box h3').matchHeight();
     $('#service-single .service-item .col-md-6').matchHeight();
     $('#featured-article .features-wrapper .feat-card').matchHeight();
+    $('#blog-single .services-list .eq-box').matchHeight();
     $(function () {
       var date1 = new Date('05/05/2021');
       var date2 = new Date('05/20/2021');

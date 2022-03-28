@@ -696,6 +696,41 @@
                 }                
             }
         }
+        .cta-box {
+            position: relative;
+            @include animate-fade;
+            padding: 33px 24px 24px 24px;
+            text-align: center;
+            box-shadow: 0px 0px 44px -10px rgba(0, 0, 0, 0.15);
+            background-color:#e6edf9;
+            margin-bottom: 30px;    
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .cta-caption {
+                h4 {
+                    display: block;
+                    margin-right: 30px;
+                    font-size: 32px;
+                    color:#FF3A43;
+                    font-family: $azo-med;       
+                    line-height: 1.2;
+                    padding-left: 30px;
+                    padding-right: 30px;
+                    margin-bottom: 35px;
+                    @include bp(md-down) {
+                        margin-bottom: 15px;
+                        font-size: 26px;
+                    }                    
+                }
+                a.btn-cta {
+                    @include red-btn;
+                    max-width: 240px;
+                    width: 240px;
+                    margin:0px auto;
+                }
+            }        
+        }
         .service-box {
             position: relative;
             @include animate-fade;

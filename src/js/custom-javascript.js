@@ -43,6 +43,7 @@
         $('#service-boxes .service-box h3').matchHeight();
         $('#service-single .service-item .col-md-6').matchHeight();
         $('#featured-article .features-wrapper .feat-card').matchHeight();
+        $('#blog-single .services-list .eq-box').matchHeight();
 
         $(function () {
 
