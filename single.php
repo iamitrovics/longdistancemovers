@@ -118,15 +118,6 @@ $container = get_theme_mod( 'understrap_container_type' );
                                                     <?php endforeach; ?>
                                                 <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
                                             <?php endif; ?>
-                                            <div class="col-md-6">
-                                                <div class="cta-box eq-box">
-                                                    <div class="cta-caption">
-                                                        <h4><?php the_sub_field('cta_title'); ?></h4>
-                                                        <a href="<?php the_sub_field('button_link_cta'); ?>" class="btn-cta"><?php the_sub_field('button_label_serv'); ?> </a>
-                                                    </div>
-                                                    <!-- // caption  -->
-                                                </div>
-                                            </div>
                                             </div>
                                             <!-- // row  -->
                                         </div>

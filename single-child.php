@@ -178,6 +178,43 @@ $container = get_theme_mod( 'understrap_container_type' );
                                             <a href="#bottom-form" class="btn-cta"><?php the_sub_field('button_label'); ?></a>
                                         </div>
                                         <!-- // single  -->  
+
+                                    <?php elseif( get_row_layout() == 'services_module' ): ?>
+
+                                        <div class="services-list">
+                                            <header>
+                                                <h3>Our Services</h3>
+                                            </header>
+                                            <div class="row">
+                                            <?php
+                                                $post_objects = get_sub_field('services_list_blog_page');
+
+                                                if( $post_objects ): ?>
+                                                    <?php foreach( $post_objects as $post): // variable must be called $post (IMPORTANT) ?>
+                                                        <?php setup_postdata($post); ?>
+
+                                                        <div class="col-md-6">
+                                                            <div class="service-box eq-box">
+                                                                <div class="services-ico">
+                                                                    <?php the_field('icon_code_service_sing'); ?>
+                                                                </div>
+                                                                <!-- /.services-ico -->
+                                                                <h3><?php the_title(); ?></h3>
+                                                                <?php the_field('short_description_service_single'); ?>
+                                                                <a href="<?php echo get_permalink(); ?>" class="serv-more">Learn more</a>
+                                                                <a href="<?php echo get_permalink(); ?>" class="url-wrap">Learn more</a>
+                                                            </div>
+                                                            <!-- /.service-box -->
+                                                        </div>
+                                                        <!-- /.col-md-4 -->
+
+                                                    <?php endforeach; ?>
+                                                <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+                                            <?php endif; ?>
+                                            </div>
+                                            <!-- // row  -->
+                                        </div>
+                                        <!-- // services list  -->
                         
                                     <?php elseif( get_row_layout() == 'table' ): ?>
 
