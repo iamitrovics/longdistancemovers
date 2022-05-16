@@ -105,7 +105,6 @@ function skip_mail_when_testing($f){
 }
 add_filter('wpcf7_skip_mail','skip_mail_when_testing');
 
-
 function fb_filter_query( $query, $error = true ) {
 
     if ( is_search() ) {
