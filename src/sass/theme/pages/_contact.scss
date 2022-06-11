@@ -51,6 +51,36 @@
             input[type=text], input[type=email], input[type=tel], input[type=number], textarea, .bootstrap-select .btn {
                 @include input-style2;
             }
+            .your-state, .your-stateto {
+                position: absolute;
+                top:32px;
+                right:25px;
+                // &:after {
+                //     content:'';
+                //     @include centre(both);
+                //     font-size: 20px;
+                //     background: url('../img/ico/map-marker-alt-light.svg') no-repeat;
+                //     background-size:13px;
+                //     background-position: center center;
+                //     width: 24px;
+                //     height: 24px;
+                //     z-index: 9999;                
+                // }
+                input {
+                    width: 32px;
+                    height: 32px!important;
+                    text-align: center;
+                    line-height: 32px;
+                    border:none;
+                    color:$white;
+                    background-color: $red;
+                    border-radius: 6px;
+                    padding:0px;
+                    font-size: 14px;
+                    position: relative;
+                    z-index: 4000;
+                }
+            }
             .form-group {
                 margin-bottom: 30px;
             }
