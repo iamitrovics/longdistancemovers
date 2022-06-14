@@ -48,6 +48,11 @@
                         font-size: 0.7em;
                     }
                 }
+                &.current-cat {
+                    a {
+                        background-color: $red;
+                    }
+                }
             }
         }
     }

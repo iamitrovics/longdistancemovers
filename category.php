@@ -14,7 +14,7 @@
                 <div class="col-md-12">
                     <div class="blog-filters">
                         <ul>
-                            <li><a href="<?php bloginfo('url'); ?>/blog" class="active">All</a></li>
+                            <li><a href="<?php bloginfo('url'); ?>/blog">All</a></li>
                             <?php wp_list_categories('title_li='); ?>
                         </ul>
                     </div>
@@ -79,13 +79,7 @@
                             <?php endwhile; // end of the loop. ?> 
 
                         <div class="custom-pagination">
-                            <ul>
-                                <li class="prev"><a href="#"><span class="icon-logo-sm-r"></span></a></li>
-                                <li><a href="#">1</a></li>
-                                <li class="active"><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li class="next"><a href="#"><span class="icon-logo-sm"></span></a></li>
-                            </ul>
+                            <?php if( function_exists('wp_pagenavi') ) wp_pagenavi(); // WP-PageNavi function ?>
                         </div>
                         <!-- // custom pagination  -->
                     </div>
