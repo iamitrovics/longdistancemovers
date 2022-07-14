@@ -51,7 +51,7 @@
             input[type=text], input[type=email], input[type=tel], input[type=number], textarea, .bootstrap-select .btn {
                 @include input-style2;
             }
-            .your-state, .your-stateto {
+            .your-state, .your-stateto , span[data-name="your-state"], span[data-name="your-stateto"] {
                 position: absolute;
                 top:32px;
                 right:25px;
